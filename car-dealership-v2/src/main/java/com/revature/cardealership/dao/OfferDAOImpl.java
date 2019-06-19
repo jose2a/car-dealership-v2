@@ -171,7 +171,7 @@ public class OfferDAOImpl extends BaseDAO implements OfferDAO {
 
 		try {
 
-			String sql = baseSql + "WHERE status_id = ?";
+			String sql = baseSql + "WHERE status_id = ? ORDER BY vin ASC";
 
 			stmt = connection.prepareStatement(sql); // Creates the prepared statement from the query
 			stmt.setInt(1, offerStatus.getValue());
