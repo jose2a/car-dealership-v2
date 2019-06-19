@@ -1,4 +1,5 @@
---create database cardealership;
+-- DATABASE NAME: cardealership	
+
 -- Drop table
 
 -- DROP TABLE public.users;
@@ -194,7 +195,10 @@ INSERT INTO public.offers
 VALUES('333', '2019-06-14', 29000, 48, 4, 604.16, 'salvadorb', '222', null, 1);
 INSERT INTO public.offers
 (offer_id, signed_date, amount, total_payment, payments_made, monthly_payment, username, vin, approved_by, status_id)
-VALUES('444', '2019-06-17', 20000, 0, 0, 0, 'salvadorb', '444', null, 3);
+VALUES('444', '2019-06-17', 15000, 0, 0, 0, 'salvadorb', '444', null, 3);
+INSERT INTO public.offers
+(offer_id, signed_date, amount, total_payment, payments_made, monthly_payment, username, vin, approved_by, status_id)
+VALUES('555', '2019-06-17', 14000, 0, 0, 0, 'pandoraj', '444', null, 3);
 
 
 -- Update username in cars which offers were accepted
